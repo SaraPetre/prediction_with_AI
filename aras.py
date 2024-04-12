@@ -13,3 +13,16 @@ plt.savefig(output_file, bbox_inches='tight', pad_inches=0) # Spara som PNG-fil
 plt.show()
 
 print("Bilden sparades i:", output_file)
+
+
+
+import pandas as pd
+
+# Läs in CSV-filen
+df = pd.read_csv('testa_sammanslagen_data.csv')
+
+# Sortera efter datum i fallande ordning
+df = df.sort_values(by='datum', ascending=False)
+
+# Skriv om den sorterade dataframen till en ny CSV-fil
+df.to_csv('sorterad_testa_sammanslagen_data.csv', index=False)

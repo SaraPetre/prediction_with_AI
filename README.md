@@ -1,2 +1,2 @@
 
-![Utskrift av Figlet](figlet_output.png)
+![](figlet_output.png)
