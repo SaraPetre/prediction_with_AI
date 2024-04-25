@@ -4,8 +4,21 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score
 
+# Börja med att unzippa csv-filen combined_data.csv.zip
+import shutil
+
+zip_file_path = "combined_data.csv.zip"  # Sökväg till zip-fil
+extract_to_path = "combined_data_test"  # Sökväg för att extrahera filerna
+
+# Packa upp zip-filen till angiven mapp
+shutil.unpack_archive(zip_file_path, extract_to_path, 'zip')
+
+print("Filer unzipped framgångsrikt!")
+
+
+
 # Läs in data
-data = pd.read_csv('./combined_data/combined_data.csv')
+data = pd.read_csv('./combined_data_test/combined_data.csv')
 
 # Separera attribut (texten av e-postmeddelandet) och målvariabel (spam eller inte spam)
 X = data['text']
@@ -50,3 +63,11 @@ print("Index för missklassificerade meddelanden:", misclassified_indices)
 # Utvärdera modellen
 accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
+
+
+
+
+# Ta bort den uppackade mappen
+shutil.rmtree(extract_to_path)
+
+print("Unzippad mapp raderad.")
