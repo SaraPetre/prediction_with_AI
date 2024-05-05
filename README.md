@@ -1,7 +1,11 @@
 Detta repo innehåller arbete som jag utfört i en utbildning på IT-högskolan. Utbildningen heter "Pythonprogrammering för AI-utveckling" 
-Länk till beskrivning av kursen "https://www.ithsdistans.se/pluginfile.php/84214/mod_resource/content/1/Pythonprogrammering%20f%C3%B6r%20AI-utveckling%2030p.pdf"
+Länk till beskrivning av kursen:
+[Länk till kursinfo PDF](kursinfo/Pythonprogrammering%20för%20AI-utveckling%2030p.pdf)
 
-Som en del av utbildningen ska ett eget projekt väljas och drivas. Jag lägger en länk till beskrivningen av första steget "https://www.ithsdistans.se/pluginfile.php/86333/mod_resource/content/1/Det%20egna%20projektet%20Steg%201.pdf". 
+
+Som en del av utbildningen ska ett eget projekt väljas och drivas. Jag lägger en länk till beskrivningen av första steget:
+[Länk till Steg 1 PDF](kursinfo/Det%20egna%20projektet%20Steg%201.pdf)
+
 
 Projektet lämnas sedan in genom ett github-repo där all kod och dokumentations ska finnas. Mitt projekt finns således i detta repo. Jag har också valt att lägga in en laboration i repot. 
 
@@ -25,6 +29,7 @@ Följande delar/filer kan hittas i projektet:
      * spam_mail/ (ett litet test-projekt)
      * additional_material (diverse filer där jag har lekt runt för att hitta en väg frammåt)
      * Crypto (innehåller också en hel del testmaterial)
+     * kursinfo (pdf:er på beskrivning av kurs samt inlämning steg 1)
 
 
 
@@ -55,5 +60,14 @@ Kör fil 'requirements.txt' med nedanstående kommando i terminalen så installe
 pip install -r requirements.txt
 ```
 
+# Begränsningar
+* Jag kör **Python3.9** på min dator. Kör du en tidigare version kan det ge problem i koden! 
 
-Jag kör **Python3.9** på min dator. Kör du en tidigare version kan det ge problem i koden! 
+* För att kunna öppna pdf:er i VScode krävs extension "PDF Preview"
+
+
+# Arbetsgång
+Arbetet kan följas i respektive Jupiter notebook-fil.
+
+# Slutsats
+Största vinning med projektet är att jag har lärt mig väldigt mycket om de maskininlärningsmetoder som jag har testat. Frågan om man kan lyckas förutspå framtida börsvärden låter sig vara obesvarad...... The future will tell! 
