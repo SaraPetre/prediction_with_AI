@@ -3,4 +3,8 @@ matplotlib
 numpy
 pandas
 scikit-learn
+seaborn
 ipykernel
+ISLP
+pyfiglet
+statsmodels
